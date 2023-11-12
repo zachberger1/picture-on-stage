@@ -1,0 +1,350 @@
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
+  justify-content: space-between;
+  /* Spread boxes evenly horizontally */
+  align-items: center;
+  /* Center vertically within the section */
+  padding: 20px;
+  /* Add space around the boxes */
+  /*max-height: 64.5vh; */
+  /* Set a maximum height to prevent overflow */
+}
+
+
+.product-box {
+  /*flex: 0 0 calc(33.33% - 20px); /* Distribute equally with spacing in between */
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.product-box:hover {
+  transform: scale(1.1);
+}
+
+.product-box img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
+.product-price {
+  position: absolute;
+  font-weight: bold;
+  /* Make the number bold */
+  left: 10px;
+  /* Adjust the distance from the left as needed */
+  bottom: 10px;
+}
+
+.product-number {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  /* Adjust the distance from the right as needed */
+  font-weight: bold;
+  /* Make the number bold */
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Apply the following styles to the header */
+header {
+  background-color: #3b3b3b;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 150px;
+  size: 3vh;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin-top: 150px; 
+}
+
+
+
+.h1 {
+  color: #ffffff;
+  align-items: center;
+}
+
+.a1 {
+  color: #fff;
+  border: 5px;
+  border-color: #ff0000c9;
+  background-color: rgb(117, 109, 109);
+}
+
+
+
+header nav ul li {
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  font-weight: bold;
+  /* Make the text bold */
+  margin-right: 20px;
+  /* Increase spacing between labels */
+}
+
+/* Apply styles to the labels in the header */
+/* Apply styles to the labels in the header */
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  /* Adjust spacing */
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  font-weight: bold;
+  /* Make the text bold */
+}
+
+/* Apply styles to the h1 in the footer */
+footer h1 {
+  margin-top: 1px;
+  /* Adjust the margin-top as needed */
+}
+
+
+
+
+
+.footer {
+  background-color: #3b3b3b;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  position: sticky;
+  bottom: 0;
+
+  width: 100%;
+  /* Span the entire width of the viewport */
+  
+}
+.a1:hover {
+  background-color: #ffffff;
+  /* Change background color on hover to red */
+  color: #837272;
+  /* Change text color on hover to white */
+}
+
+
+.login-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding-left: 5px;
+  padding-right: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.login-container {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  /* Set container to relative positioning */
+  padding-right: 25px;
+}
+
+.form-wrapper {
+  text-align: right;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding-left: 5px;
+  padding-right: 25px;
+}
+
+
+#submit-button {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  /* Change from "left" to "right" */
+}
+
+/* Style for the "If you already have an account" button */
+.c1 {
+  position: absolute;
+  bottom: 0px;
+
+  left: 20px;
+  /* Change from "right" to "left" */
+}
+
+
+.password-container {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  padding-right: 40px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center both horizontally and vertically */
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+.a1 {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  /* Add some padding to the element */
+  text-decoration: none;
+  /* Remove underline from the link */
+  color: #ffffff;
+  /* Set the text color to red */
+  background-color: #5a5757;
+  /* Set the background color to white */
+
+}
+.img{ right: 3%;
+  bottom: 10%;
+  text-align: right;
+  align-content: end;
+  align-items: end;
+  position: absolute;
+}
