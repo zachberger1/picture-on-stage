@@ -93,6 +93,7 @@ function signup1() {
 }
 
 
+
 // Call the displayName function when the page loads
 window.addEventListener('DOMContentLoaded', displayName);
 
