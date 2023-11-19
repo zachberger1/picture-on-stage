@@ -11,6 +11,9 @@
   /*max-height: 64.5vh; */
   /* Set a maximum height to prevent overflow */
 }
+body{ min-height: 100vh;
+  display: flex;
+  flex-direction: column;}
 
 
 .product-box {
@@ -275,7 +278,7 @@ button:hover {
   width: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* Center both horizontally and vertically */
@@ -339,6 +342,43 @@ table {
   /* Set the text color to red */
   background-color: #5a5757;
   /* Set the background color to white */
+ 
 
 }
-.img3{}
+.img{ right: 3%;
+  bottom: 10%;
+  text-align: right;
+  align-content: end;
+  align-items: end;
+  position: absolute;
+}
+.img3{max-width: 70%;
+
+}
+
+
+.a3{ padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  /* Add some padding to the element */
+  text-decoration: none;
+  /* Remove underline from the link */
+  color: #ffffff;
+  /* Set the text color to red */
+  background-color: #5a5757;
+  /* Set the background color to white */
+
+}
+.footer12 {
+  background-color: #3b3b3b;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  /* Span the entire width of the viewport */
+  
+}
