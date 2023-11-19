@@ -72,7 +72,6 @@ function login() {
 
 
 
-<<<<<<< HEAD
 function logout() {
   let user1 = localStorage.getItem("Current_User");
   const status = localStorage.getItem(`${user1}_status`);
@@ -115,46 +114,3 @@ function checkPassword() {
     document.getElementById("passwordInput").style.borderColor = "red";
   }
 }
-=======
-// function logout() {
-//   let user1 = localStorage.getItem("Current_User");
-//   const status = localStorage.getItem(`${user1}_status`);
-
-//   if (status == "online") {
-//     window.location.assign("index.html");
-//     localStorage.removeItem(`${user1}_status`);
-//     localStorage.setItem("Current_User", "");
-//     console.log(user1);
-
-//   } else {
-//     alert("User is no longer online");
-//   }
-//   displayName();
-// }
-
-// function signup1() {
-//   window.location.assign("signup.html");
-// }
-
-
-// // Call the displayName function when the page loads
-// window.addEventListener('DOMContentLoaded', displayName);
-
-
-
-// function card() {
-
-//   const username = document.getElementById("card").value;
-//   localStorage.setItem(card)
-// }
-// function checkPassword() {
-//   var password = document.getElementById("passwordInput").value;
-
-//   if (password === "1234") {
-//     window.location.href = "user.html";
-//   } else {
-//     // Incorrect password, add a red border to the input box
-//     document.getElementById("passwordInput").style.borderColor = "red";
-//   }
-// }
->>>>>>> 12747ed (update to the app)
