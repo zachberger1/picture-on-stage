@@ -11,9 +11,7 @@
   /*max-height: 64.5vh; */
   /* Set a maximum height to prevent overflow */
 }
-body{ min-height: 100vh;
-  display: flex;
-  flex-direction: column;}
+
 
 
 .product-box {
@@ -200,32 +198,11 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  
-}
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
 
-}
 
-button:hover {
-  background-color: #0056b3;
-}
+
+
 
 
 .login-container {
@@ -239,34 +216,13 @@ button:hover {
   padding-right: 25px;
 }
 
-.form-wrapper {
-  text-align: right;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding-left: 5px;
-  padding-right: 25px;
-}
 
 
-#submit-button {
-  position: absolute;
-  bottom: 5px;
-  right: 20px;
-  /* Change from "left" to "right" */
-}
+
+
 
 /* Style for the "If you already have an account" button */
-.c1 {
-  position: absolute;
-  bottom: 0px;
 
-  left: 20px;
-  /* Change from "right" to "left" */
-}
 
 
 .password-container {
@@ -285,41 +241,15 @@ button:hover {
   /* Center both horizontally and vertically */
 }
 
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-button:hover {
-  background-color: #0056b3;
-}
 
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
+
+
+
+
+ 
 
 
 .a1 {
@@ -348,18 +278,7 @@ table {
 }
 
 
-.a3{ padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  /* Add some padding to the element */
-  text-decoration: none;
-  /* Remove underline from the link */
-  color: #ffffff;
-  /* Set the text color to red */
-  background-color: #5a5757;
-  /* Set the background color to white */
 
-}
 .footer12 {
   background-color: #3b3b3b;
   color: #fff;
