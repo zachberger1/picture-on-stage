@@ -36,7 +36,7 @@
 .product-box img {
   max-width: 100%;
   height: auto;
-  max-height: 150px;
+  max-height: 87%;
 }
 
 .product-price {
@@ -56,9 +56,6 @@
   font-weight: bold;
   /* Make the number bold */
 }
-
-
-
 
 body {
   margin: 0;
@@ -291,4 +288,14 @@ label {
   width: 100%;
   /* Span the entire width of the viewport */
   
+}
+.product-link {
+  text-decoration: none;
+  color: inherit; /* Keep the link color the same as the text color */
+  cursor: pointer;
+}
+.product-info {
+  flex: 1; /* Allow the product info to take available space */
+  padding: 0 20px; /* Add padding for spacing */
+  text-align: right;
 }
