@@ -64,7 +64,7 @@ body {
 
 /* Apply the following styles to the header */
 header {
-  background-color: #3b3b3b;
+  background-color: #8e2323;
   color: #fff;
   position: fixed;
   top: 0;
@@ -299,3 +299,4 @@ label {
   padding: 0 20px; /* Add padding for spacing */
   text-align: right;
 }
+
