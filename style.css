@@ -11,7 +11,20 @@
   /*max-height: 64.5vh; */
   /* Set a maximum height to prevent overflow */
 }
-
+.product-box1 {
+  /*flex: 0 0 calc(33.33% - 20px); /* Distribute equally with spacing in between */
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+  position: relative;
+}
 
 
 .product-box {
