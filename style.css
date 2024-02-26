@@ -117,6 +117,9 @@ section {
 .h1 {
   color: #ffffff;
   align-items: center;
+  font-family: 'Alex Brush', cursive; 
+  /* Apply Alex Brush font to the entire document */
+  font-size: 52px;
 }
 
 .a1 {
@@ -226,15 +229,6 @@ label {
   padding-right: 25px;
 }
 
-
-
-
-
-
-/* Style for the "If you already have an account" button */
-
-
-
 .password-container {
   text-align: center;
   background-color: #f4f4f4;
@@ -250,17 +244,6 @@ label {
   transform: translate(-50%, -50%);
   /* Center both horizontally and vertically */
 }
-
-
-
-
-
-
-
-
-
- 
-
 
 .a1 {
   padding-left: 5px;
@@ -313,7 +296,7 @@ label {
   text-align: right;
 }
 
-.img111{
+.vertical-image{
 
   margin-top:  25%;
 }
