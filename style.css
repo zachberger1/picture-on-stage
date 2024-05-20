@@ -1,302 +1,275 @@
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* Allow wrapping on smaller screens */
-  justify-content: space-between;
-  /* Spread boxes evenly horizontally */
-  align-items: center;
-  /* Center vertically within the section */
-  padding: 20px;
- 
-}
-.product-box1 {
-  /*flex: 0 0 calc(33.33% - 20px); /* Distribute equally with spacing in between */
-  width: 300px;
-  height: 350px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: #fff;
-  cursor: pointer;
-  transition: transform 0.2s;
-  position: relative;
-}
-
-
-.product-box {
-  /*flex: 0 0 calc(33.33% - 20px); /* Distribute equally with spacing in between */
-  width: 300px;
-  height: 350px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: #fff;
-  cursor: pointer;
-  transition: transform 0.2s;
-  position: relative;
-}
-
-.product-box:hover {
-  transform: scale(1.1);
-}
-
-.product-box img {
-  max-width: 100%;
-  height: auto;
-  max-height: 87%;
-}
-
-.product-price {
-  position: absolute;
-  font-weight: bold;
-  /* Make the number bold */
-  left: 10px;
-  /* Adjust the distance from the left as needed */
-  bottom: 10px;
-}
-
-.product-number {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  /* Adjust the distance from the right as needed */
-  font-weight: bold;
-  /* Make the number bold */
-}
-
 body {
-  margin: 0;
- font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Apply the following styles to the header */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    /* Spread boxes evenly horizontally */
+    align-items: center;
+    /* Center vertically within the section */
+    padding: 20px;
+    margin-bottom: 96px;
+}
+
+/*////////////////////////////////////
+///                                ///
+///             Hearder            ///
+///                                ///
+////////////////////////////////////*/
+
+
 header {
-  background-color: #8e2323;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom:99px ;
+    background-color: #8e2323;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 95px;
 }
 
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
 }
 
 nav ul li {
-  display: inline-block;
-  margin-right: 150px;
-  size: 3vh;
+    display: inline-block;
+    margin-right: 150px;
+    size: 3vh;
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
-
-section {
-  padding: 20px;
-  margin-top: 175px; 
-}
-.h1-pos{
-  color: #ffffff;
-  align-items: center;
-  font-family: "Alex Brush", cursive;
-  /* Apply Alex Brush font to the entire document */
-  font-size: 40px;
- 
-}
-
-.h1{
-  color: #ffffff;
-  align-items: center;
-  font-family:Arial, Helvetica, sans-serif;
-  /* Apply Alex Brush font to the entire document */
-  font-size: 40px;
- 
-}
-
-.a1 {
-  color: #fff;
-  border: 5px;
-  border-color: #ff0000c9;
-  background-color: rgb(117, 109, 109);
-}
-
-
 
 header nav ul li {
-  font-size: 20px;
-  /* Adjust the font size as needed */
-  font-weight: bold;
-  /* Make the text bold */
-  margin-right: 20px;
-  /* Increase spacing between labels */
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
-/* Apply styles to the labels in the header */
-/* Apply styles to the labels in the header */
 header nav ul {
-  display: flex;
-  justify-content: space-around;
-  /* Adjust spacing */
-  align-items: center;
-
-  margin: 0;
-  padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
-  font-size: 24px;
-  /* Adjust the font size as needed */
-  font-weight: bold;
-  /* Make the text bold */
+    font-size: 24px;
+    font-weight: bold;
 }
 
-/* Apply styles to the h1 in the footer */
-footer h1 {
-  margin-top: 1px;
-  /* Adjust the margin-top as needed */
-}
-
-
-
+/*////////////////////////////////////
+///                                ///
+///             Footer             ///
+///                                ///
+////////////////////////////////////*/
 
 
 .footer {
-  background-color: #3b3b3b;
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  
-  position: sticky;
-  bottom: 0;
-
-  width: 100%;
-  /* Span the entire width of the viewport */
-  
-}
-.a1:hover {
-  background-color: #ffffff;
-  /* Change background color on hover to red */
-  color: #837272;
-  /* Change text color on hover to white */
+    background-color: #3b3b3b;
+    color: #fff;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-
-.login-container {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: right;
-  width: 50%;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding-left: 5px;
-  padding-right: 25px;
+.product-box {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
 }
 
-.form-group {
-  margin-bottom: 15px;
+.product-box:hover {
+    transform: scale(1.1);
 }
 
-label {
-  display: block;
-  font-weight: bold;
+.product-box img {
+    max-width: 100%;
+    height: auto;
+    max-height: 87%;
+}
+
+.product-price {
+    position: absolute;
+    font-weight: bold;
+    left: 10px;
+    bottom: 10px;
+}
+
+.product-number {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
 }
 
 
-.login-container {
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  position: relative;
-  /* Set container to relative positioning */
-  padding-right: 25px;
+
+
+
+section {
+    padding: 20px;
+    margin-top: 175px;
 }
 
-.password-container {
-  text-align: center;
-  background-color: #f4f4f4;
-  padding-bottom: 0px;
-  padding-top: 0px;
-position: sticky;
-  border-radius: 10px;
-  width: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 53%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Center both horizontally and vertically */
+.h1-pos {
+    color: #ffffff;
+    align-items: center;
+    font-family: "Alex Brush", cursive;
+    font-size: 40px;
+
+}
+
+.h1 {
+    color: #ffffff;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Apply Alex Brush font to the entire document */
+    font-size: 40px;
+
 }
 
 .a1 {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  /* Add some padding to the element */
-  text-decoration: none;
-  /* Remove underline from the link */
-  color: #ffffff;
-  /* Set the text color to red */
-  background-color: #5a5757;
-  /* Set the background color to white */
- 
-
-}
-.img{ right: 3%;
-  bottom: 10%;
-  text-align: right;
-  align-content: end;
-  align-items: end;
-  position: absolute;
-}
-.img3{max-width: 60%;
-
+    color: #fff;
+    border: 5px;
+    border-color: #ff0000c9;
+    background-color: rgb(117, 109, 109);
 }
 
 
 
-.footer12 {
-  background-color: #3b3b3b;
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  
-  position: fixed;
-  bottom: 0;
-
-  width: 100%;
-  /* Span the entire width of the viewport */
-  
+.a1:hover {
+    background-color: #ffffff;
+    /* Change background color on hover to red */
+    color: #837272;
+    /* Change text color on hover to white */
 }
+
+
+.login-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+
+.login-container {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    /* Set container to relative positioning */
+    padding-right: 25px;
+}
+
+.password-container {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: sticky;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center both horizontally and vertically */
+}
+
+.a1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    /* Add some padding to the element */
+    text-decoration: none;
+    /* Remove underline from the link */
+    color: #ffffff;
+    /* Set the text color to red */
+    background-color: #5a5757;
+    /* Set the background color to white */
+
+
+}
+
+.img {
+    right: 3%;
+    bottom: 10%;
+    text-align: right;
+    align-content: end;
+    align-items: end;
+    position: absolute;
+}
+
+.img3 {
+    max-width: 60%;
+
+}
+
+
+
+
+
 .product-link {
-  text-decoration: none;
-  color: inherit; /* Keep the link color the same as the text color */
-  cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    /* Keep the link color the same as the text color */
+    cursor: pointer;
 }
+
 .product-info {
-  flex: 1; /* Allow the product info to take available space */
-  padding: 0 20px; /* Add padding for spacing */
-  text-align: right;
+    flex: 1;
+    /* Allow the product info to take available space */
+    padding: 0 20px;
+    /* Add padding for spacing */
+    text-align: right;
 }
 
-.vertical-image{
+.vertical-image {
 
-  margin-top:  25%;
+    margin-top: 25%;
 }
