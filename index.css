@@ -165,10 +165,12 @@ nav ul li a {
 
 .carousel-images {
   display: flex;
-  animation: slide 15s linear infinite;
+  width: calc(40% * 5); 
+  animation: slide 10s linear infinite;
 }
 
 .carousel-image {
+  width: 20%;
   margin-top: 20px;
 }
 
@@ -178,6 +180,6 @@ nav ul li a {
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
