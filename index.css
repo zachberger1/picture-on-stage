@@ -11,7 +11,8 @@ body {
 header {
   background-color: #8e2323;
   color: #fff;
-  position: absolute;
+  position: relative; /* Change from absolute to relative */
+  margin-top: -80px; /* Move the header up by 70px */
   bottom: 0;
   width: 100%;
   z-index: 1002;
@@ -165,10 +166,12 @@ nav ul li a {
 
 .carousel-images {
   display: flex;
-  animation: slide 15s linear infinite;
+  width: calc(60% * 5); 
+  animation: slide 10s linear infinite;
 }
 
 .carousel-image {
+  width: 20%;
   margin-top: 20px;
 }
 
@@ -178,6 +181,54 @@ nav ul li a {
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .H1-title {
+    font-size: 5vw;
+  }
+
+  header nav ul li {
+    font-size: 18px;
+  }
+
+  .product-box {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .H1-title {
+    font-size: 4vw;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .product-box {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .H1-title {
+    font-size: 8vw;
+  }
+
+  header {
+    padding: 10px 0;
+  }
+
+  header nav ul li {
+    font-size: 14px;
   }
 }

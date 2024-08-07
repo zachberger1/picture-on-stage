@@ -1,19 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="he">
 
 <head>
-    <title>ציור על הבמה</title>
-     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 96px;
+        }
+
+        header {
+            background-color: #8e2323;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 95px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 150px;
+            size: 3vh;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav ul li {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #3b3b3b;
+            color: #fff;
+            padding-top: 0px;
+            padding-bottom: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 175px;
+        }
+
+        .h1-pos {
+            color: #ffffff;
+            align-items: center;
+            font-family: "Alex Brush", cursive;
+            font-size: 40px;
+        }
+
+        .h1 {
+            color: #ffffff;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+
+        .a1 {
+            color: #fff;
+            border: 5px;
+            border-color: #ff0000c9;
+            background-color: rgb(117, 109, 109);
+        }
+
+        .a1:hover {
+            background-color: #ffffff;
+            color: #837272;
+        }
+
+        .login-container {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: right;
+            width: 50%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding-left: 5px;
+            padding-right: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .product-link {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .product-info {
+            flex: 1;
+            padding: 0 20px;
+            text-align: right;
+        }
+
+        .vertical-image {
+            margin-top: 25%;
+        }
+
+        /* Custom styles for the contact form */
+        .contact-form {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #8e2323;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            display: block;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #8e2323;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #732020;
+        }
+    </style>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ssPlpU9KJwOUR2I3l"); // Replace with your user ID
+        })();
+    </script>
 </head>
 
 <body>
     <header class="header">
-        <center dir="rtl" >
-            <h1 class="h1">איך לרכוש ציור: </h1>
-            
+        <center>
+            <h1 class="h1">אהבה</h1>
         </center>
         <nav>
             <ul>
@@ -23,31 +222,52 @@
                 <li><a href="שקיעות.html">שקיעות</a></li>
                 <li><a href="אהבה.html">אהבה</a></li>
                 <li><a href="index.html">דף הבית</a></li>
-         
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="password-container" dir="rtl" >
-            <!-- <h1>איך לרכוש ציור</h1> -->
-            <h2>שלחו אימייל ל:</h2>
-            <p> <a href="mailto:paintingonstage@gmail.com" target="_blank">paintingonstage@gmail.com</a></p>
-            <p>באימייל יש לכתוב את הפרטים הבאים: שם מלא, מספר טלפון.</p>
-            <p>בנוסף, יש לכתוב את מספרי זיהוי של הציורים שברצונך לרכוש.</p>
-            <p>האימייל אמור להיראות כך:</p>
-            <img src="assets/gmail.png" alt="" class="gmail">
+
+
+
+    <section >
+        <div class="contact-form" >
+            <h2>צור קשר</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">שם:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">מייל:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">הודעה:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">שלח</button>
+            </form>
         </div>
     </section>
-    
-<footer class="footer" dir="rtl">
-    <center>
-        <h1>תודה על הביקור! נשמח לראותך שוב.</h1>
-    </center>
-    <img src="assets/logo.jpg" alt="" class="img">
 
-  </footer>
-    <script src="app.js"></script>
+    <footer class="footer">
+        <center>
+            <h1 class="h12">רוצים לקנות ציור<a href="הסבר.html" class="a1">לחצו כאן</a></h1>
+        </center>
+        <img src="assets/logo.jpg" alt="" class="img">
+    </footer>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_z0nhgjq', 'template_bbnjmaf', this)
+                .then(function () {
+                    alert('ההודעה שלך נשלחה בהצלחה!');
+                }, function (error) {
+                    alert('שליחת ההודעה נכשלה, נסה שוב מאוחר יותר.');
+                });
+        });
+    </script>
 </body>
-
 
 </html>
