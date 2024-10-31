@@ -95,6 +95,26 @@ header nav ul li {
     width: 100%;
 }
 
+.product-box-details {
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.product-box-details img {
+    max-width: 100%;
+    height: auto;
+    max-height: 87%;
+}
+
 .product-box {
     width: 300px;
     height: 350px;
@@ -133,13 +153,9 @@ header nav ul li {
     font-weight: bold;
 }
 
-
-
-
-
 section {
     padding: 20px;
-    margin-top: 180px;
+    margin-top: 170px;
 }
 
 .h1-pos {
@@ -155,7 +171,7 @@ section {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     /* Apply Alex Brush font to the entire document */
-    font-size: 40px;
+    font-size: 35px;
 
 }
 
@@ -254,10 +270,6 @@ label {
 
 }
 
-
-
-
-
 .product-link {
     text-decoration: none;
     color: inherit;
@@ -276,4 +288,24 @@ label {
 .vertical-image {
 
     margin-top: 25%;
+}
+
+.product-details {
+    display: inline-block;
+
+}
+
+.product-container>div {
+    margin: 10px;
+}
+
+.description-container {
+
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
 }

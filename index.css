@@ -158,11 +158,14 @@ nav ul li a {
   margin-top: 40px;
 }
 
+
 .carousel-container::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
-
+.carousel-images:hover {
+  animation-play-state: paused; /* Pauses animation on hover */
+}
 
 .carousel-images {
   display: flex;
